@@ -48,11 +48,11 @@
 												    编辑 <span class="caret"></span>
 												  </button>
 												  <ul class="dropdown-menu">
-												    <li><a href="${pageContext.request.contextPath }/manager/flatform/product/getpro?proid=${product.proid}" >查看</a></li>
-												    <li><a href="${pageContext.request.contextPath }/manager/flatform/product/editpro?proid=${product.proid}">修改</a></li>
+												    <li><a href="${pageContext.request.contextPath }/Admin/flatform/product/getpro?proid=${product.proid}" >查看</a></li>
+												    <li><a href="${pageContext.request.contextPath }/Admin/flatform/product/editpro?proid=${product.proid}">修改</a></li>
 												  </ul>
 												</div>
-					                            <a href="${pageContext.request.contextPath }/manager/flatform/product/deletepro?proid=${product.proid}"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
+					                            <a href="${pageContext.request.contextPath }/Admin/flatform/product/deletepro?proid=${product.proid}"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
 					                         </th>
 					          	</tr>
 					         </c:forEach>
@@ -95,7 +95,7 @@
 								</nav>
 							</div> --%>
 						</div>
-								<a href="${pageContext.request.contextPath }/manager/flatform/product/getlist" class=" text-left btn btn-default  " role="button">返回上页</a>
+								<a href="${pageContext.request.contextPath }/Admin/flatform/product/getlist" class=" text-left btn btn-default  " role="button">返回上页</a>
 	                </div>
 	</div>
 </div>

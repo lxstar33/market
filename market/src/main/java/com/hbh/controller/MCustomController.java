@@ -22,7 +22,7 @@ import com.hbh.service.imp.CustomServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/custom")
+@RequestMapping("/Admin/flatform/custom")
 public class MCustomController {
 	
 	@Autowired

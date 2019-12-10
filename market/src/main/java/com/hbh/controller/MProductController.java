@@ -28,7 +28,7 @@ import com.hbh.service.imp.ProductServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/product")
+@RequestMapping("/Admin/flatform/product")
 public class MProductController {
 	@Autowired
 	ProductServiceImp productServiceImp;

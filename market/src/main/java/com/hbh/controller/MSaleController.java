@@ -25,7 +25,7 @@ import com.hbh.service.imp.SaleServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/sale")
+@RequestMapping("/Admin/flatform/sale")
 public class MSaleController {
 	@Autowired
 	SaleServiceImp saleServiceImp;

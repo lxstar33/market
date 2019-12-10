@@ -28,7 +28,7 @@ import com.hbh.service.imp.KcxxServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/kcxx")
+@RequestMapping("/Admin/flatform/kcxx")
 public class MKcxxController {
 	@Autowired
 	KcxxServiceImp kcxxServiceImp;

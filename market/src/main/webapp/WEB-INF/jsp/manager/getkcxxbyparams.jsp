@@ -26,7 +26,7 @@
 					                         <th>${kcxx.num}</th>
 					                         <th>${kcxx.marks}</th>      
 					                         <th>
-					                            <a href="${pageContext.request.contextPath }/manager/flatform/kcxx/toupdate?proid=${kcxx.proid}" class="btn btn-primary btn-xs">进货</a> 
+					                            <a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/toupdate?proid=${kcxx.proid}" class="btn btn-primary btn-xs">进货</a>
 					                            <a onclick="del(${kcxx.proid})"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">退货</a>
 					                         </th>
 					          	</tr>

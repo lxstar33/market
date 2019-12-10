@@ -22,7 +22,7 @@ import com.hbh.service.imp.TypeServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/type")
+@RequestMapping("/Admin/flatform/type")
 public class MTypeController {
 	
 	@Autowired

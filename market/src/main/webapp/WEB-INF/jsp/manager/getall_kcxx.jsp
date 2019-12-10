@@ -39,8 +39,8 @@
 					                         <th>${kcxx.pname}</th>
 					                         <th>${kcxx.num}</th>
 					                         <th>
-					                         	<a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPro?proid=${kcxx.proid}" class="btn btn-success  btn-xs" >查看</a>
-					                            <a href="${pageContext.request.contextPath }/manager/flatform/kcxx/toupdate?proid=${kcxx.proid}" class="btn btn-primary btn-xs">进货</a> 
+					                         	<a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPro?proid=${kcxx.proid}" class="btn btn-success  btn-xs" >查看</a>
+					                            <a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/toupdate?proid=${kcxx.proid}" class="btn btn-primary btn-xs">进货</a>
 <%-- 					                            <a onclick="del(${kcxx.proid})"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">退货</a>
  --%>					                         </th>
 					          	</tr>
@@ -57,9 +57,9 @@
 							<div class="col-md-6">
 								<nav aria-label="Page navigation">
 								<ul class="pagination">
-									<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/getall?pn=1">首页</a></li>
+									<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/getall?pn=1">首页</a></li>
 									<c:if test="${pageInfo.hasPreviousPage }">
-										<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/getall?pn=${pageInfo.pageNum-1}"
+										<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/getall?pn=${pageInfo.pageNum-1}"
 											aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
 										</a></li>
 									</c:if>
@@ -70,16 +70,16 @@
 											<li class="active"><a href="#">${page_Num }</a></li>
 										</c:if>
 										<c:if test="${page_Num != pageInfo.pageNum }">
-											<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/getall?pn=${page_Num }">${page_Num }</a></li>
+											<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/getall?pn=${page_Num }">${page_Num }</a></li>
 										</c:if>
 				
 									</c:forEach>
 									<c:if test="${pageInfo.hasNextPage }">
-										<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/getall?pn=${pageInfo.pageNum+1 }"
+										<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/getall?pn=${pageInfo.pageNum+1 }"
 											aria-label="Next"> <span aria-hidden="true">&raquo;</span>
 										</a></li>
 									</c:if>
-									<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/getall?pn=${pageInfo.pages}">末页</a></li>
+									<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/getall?pn=${pageInfo.pages}">末页</a></li>
 								</ul>
 								</nav>
 							</div>
@@ -94,7 +94,7 @@
 		var message=confirm("是否确认要退货?");
 		if (message==true) {
 			// 确认时做的操作 var 
-			window.location.href="${pageContext.request.contextPath }/manager/flatform/kcxx/delete?proid="+id;
+			window.location.href="${pageContext.request.contextPath }/Admin/flatform/kcxx/delete?proid="+id;
 			alert("退货成功");
 	} else {
 		// 取消时做的操作

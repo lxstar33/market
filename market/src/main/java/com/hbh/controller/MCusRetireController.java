@@ -30,7 +30,7 @@ import com.hbh.service.imp.SaleServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/cusretire")
+@RequestMapping("/Admin/flatform/cusretire")
 public class MCusRetireController {
 	
 	@Autowired

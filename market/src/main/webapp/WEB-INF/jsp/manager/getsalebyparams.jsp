@@ -37,7 +37,7 @@
 					                         <th>${sale.cusname}</th>
 					                         <th>${sale.marks}</th>      
 					                         <th>
-												<a href="${pageContext.request.contextPath }/manager/flatform/sale/getbyid?saleid=${sale.saleid}" class="btn btn-primary btn-xs" >查看</a>
+												<a href="${pageContext.request.contextPath }/Admin/flatform/sale/getbyid?saleid=${sale.saleid}" class="btn btn-primary btn-xs" >查看</a>
 					                            <a onclick="del(${sale.saleid})"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
 					                         </th>
 					          	</tr>
@@ -62,7 +62,7 @@
 		var message=confirm("是否确认要删除?");
 		if (message==true) {
 			// 确认时做的操作 var 
-			window.location.href="${pageContext.request.contextPath }/manager/flatform/sale/delete?saleid="+id;
+			window.location.href="${pageContext.request.contextPath }/Admin/flatform/sale/delete?saleid="+id;
 			alert("删除成功");
 	} else {
 		// 取消时做的操作

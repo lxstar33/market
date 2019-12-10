@@ -48,7 +48,7 @@
 							<!-- 分页条信息 -->
 							
 						</div>
-						<a href="${pageContext.request.contextPath }/manager/flatform/ckin/getall" class=" text-left btn btn-default" role="button">返回上页</a>
+						<a href="${pageContext.request.contextPath }/Admin/flatform/ckin/getall" class=" text-left btn btn-default" role="button">返回上页</a>
 	                </div>
 	                
 	</div>

@@ -6,7 +6,7 @@
 		$.ajax({
 			type:'post',
 			data:{"proid":proid},
-			url:'/chaoshi/manager/flatform/product/getproduct?proid='+proid,
+			url:'/chaoshi/Admin/flatform/product/getproduct?proid='+proid,
 			dataType:'json',
 			success:function(data){
 				$("#pname").val(data.pname);

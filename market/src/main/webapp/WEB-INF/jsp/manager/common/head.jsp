@@ -18,10 +18,10 @@
 </head>
 <script type="text/javascript">
 function update(id) {
-		window.location.href="${pageContext.request.contextPath }/manager/toupdate?managerid="+id;
+		window.location.href="${pageContext.request.contextPath }/Admin/toupdate?managerid="+id;
 }  
 function get(id) {
-	window.location.href="${pageContext.request.contextPath }/manager/getbyid?managerid="+id;
+	window.location.href="${pageContext.request.contextPath }/Admin/getbyid?managerid="+id;
 } 
 </script>
 <body class="nav-md">
@@ -30,7 +30,7 @@ function get(id) {
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="${pageContext.request.contextPath }/manager/flatform/main" class="site_title"><i class="fa fa-paw"></i> <span>Welcome!</span></a>
+              <a href="${pageContext.request.contextPath }/Admin/flatform/main" class="site_title"><i class="fa fa-paw"></i> <span>Welcome!</span></a>
             </div>
 					
             <div class="clearfix"></div>
@@ -47,44 +47,44 @@ function get(id) {
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> 进货管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/ckin/getall">进货信息</a></li>
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/ckretire/getall">退货信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/ckin/getall">进货信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/ckretire/getall">退货信息</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-edit"></i> 商品信息管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/product/getlist">商品信息</a></li>
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/type/getall">商品类别</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/product/getlist">商品信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/type/getall">商品类别</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> 库存管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/getall">库存信息</a></li>
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPronum">库存预警</a></li>
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithProdata">临期产品</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/getall">库存信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPronum">库存预警</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithProdata">临期产品</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-table"></i> 销售管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/sale/getall">销售信息</a></li>
-                      <li><a href="${pageContext.request.contextPath}/manager/flatform/sale/toechart">销售统计</a></li>
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/cusretire/getall">顾客退货办理</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/sale/getall">销售信息</a></li>
+                      <li><a href="${pageContext.request.contextPath}/Admin/flatform/sale/toechart">销售统计</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/cusretire/getall">顾客退货办理</a></li>
                       
                     </ul>
                   </li>
                   <li><a><i class="fa fa-bar-chart-o"></i> 客户信息管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/custom/getall">客户信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/custom/getall">客户信息</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-clone"></i>供应商信息管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/flatform/supply/getall">供应商信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/flatform/supply/getall">供应商信息</a></li>
                     </ul>
                   </li>
             	  <li><a><i class="fa fa-clone"></i>员工信息管理 <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="${pageContext.request.contextPath }/manager/getall">员工信息</a></li>
+                      <li><a href="${pageContext.request.contextPath }/Admin/getall">员工信息</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -100,7 +100,7 @@ function get(id) {
               <a data-toggle="tooltip" data-placement="top" title="Lock">
                 <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
               </a> -->
-              <a data-toggle="tooltip" data-placement="top" title="Logout" href="${pageContext.request.contextPath }/manager/logout">
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="${pageContext.request.contextPath }/Admin/logout">
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
@@ -126,7 +126,7 @@ function get(id) {
                     <li>
                       <a onclick="update(${managerSession.managerid})">修改资料</a>
                     </li>
-                    <li><a href="${pageContext.request.contextPath }/manager/logout"><i class="fa fa-sign-out pull-right"></i> 退出</a></li>
+                    <li><a href="${pageContext.request.contextPath }/Admin/logout"><i class="fa fa-sign-out pull-right"></i> 退出</a></li>
                   </ul>
                 </li>
               </ul>

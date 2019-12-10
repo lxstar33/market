@@ -34,7 +34,7 @@
 					                         <th><fmt:formatDate pattern="yyyy-MM-dd" value="${ckretire.retdate}"/></th>
 					                         <th>${ckretire.marks}</th>      
 					                         <th>
-											   <a href="${pageContext.request.contextPath }/manager/flatform/ckretire/edit?inid=${ckretire.inid}" class="btn btn-primary btn-xs">修改</a>
+											   <a href="${pageContext.request.contextPath }/Admin/flatform/ckretire/edit?inid=${ckretire.inid}" class="btn btn-primary btn-xs">修改</a>
 					                           <a onclick="del(${ckretire.inid})"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
 					                         </th>
 					          	</tr>
@@ -48,7 +48,7 @@
 							<div class="col-md-6">总 ${pageInfo.total } 条记录</div>
 		
 						</div>
-						<a href="${pageContext.request.contextPath }/manager/flatform/ckretire/getall" class=" text-left btn btn-default" role="button">返回上页</a>
+						<a href="${pageContext.request.contextPath }/Admin/flatform/ckretire/getall" class=" text-left btn btn-default" role="button">返回上页</a>
 		
 	                </div>
 	</div>
@@ -59,7 +59,7 @@
 		var message=confirm("是否确认要删除?");
 		if (message==true) {
 			// 确认时做的操作 var 
-			window.location.href="${pageContext.request.contextPath }/manager/flatform/ckretire/delete?inid="+id;
+			window.location.href="${pageContext.request.contextPath }/Admin/flatform/ckretire/delete?inid="+id;
 			alert("删除成功");
 	} else {
 		// 取消时做的操作

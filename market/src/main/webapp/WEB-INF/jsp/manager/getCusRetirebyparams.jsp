@@ -56,7 +56,7 @@
 		var message=confirm("是否确认要删除?");
 		if (message==true) {
 			// 确认时做的操作 var 
-			window.location.href="${pageContext.request.contextPath }/manager/flatform/cusretire/delete?saleid="+id;
+			window.location.href="${pageContext.request.contextPath }/Admin/flatform/cusretire/delete?saleid="+id;
 			alert("删除成功");
 	} else {
 		// 取消时做的操作

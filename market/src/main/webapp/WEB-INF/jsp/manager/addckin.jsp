@@ -48,7 +48,7 @@
                           <input id="marks" name="marks" class="form-control col-md-7 col-xs-5" value="${ckin.marks}"  type="text" >
                         </div>
                         </div>
-						<a href="${pageContext.request.contextPath }/manager/flatform/ckin/getall" class=" text-left btn btn-default" role="button">返回上页</a>
+						<a href="${pageContext.request.contextPath }/Admin/flatform/ckin/getall" class=" text-left btn btn-default" role="button">返回上页</a>
 						<button type="submit" class="btn btn-primary text-center  col-md-offset-4 col-lg-offset-4col-xl-offset-4" >添加</button>								                      
                     </form>
 	<div class="clearfix"></div>

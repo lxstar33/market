@@ -33,10 +33,10 @@
 												    编辑 <span class="caret"></span>
 												  </button>
 												  <ul class="dropdown-menu">
-												    <li><a href="${pageContext.request.contextPath }/manager/flatform/type/toupdate?protypeid=${type.protypeid}">修改</a></li>
+												    <li><a href="${pageContext.request.contextPath }/Admin/flatform/type/toupdate?protypeid=${type.protypeid}">修改</a></li>
 												  </ul>
 												</div>
-					                            <a href="${pageContext.request.contextPath }/manager/flatform/type/delete?protypeid=${type.protypeid}"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
+					                            <a href="${pageContext.request.contextPath }/Admin/flatform/type/delete?protypeid=${type.protypeid}"  class="btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
 					                         </th>
 					          	</tr>
 					         </c:forEach>

@@ -33,7 +33,7 @@
 					                         <th>${staff.stafftype}</th>
 					                         <th>${staff.pwd}</th>
 					                         <th>
-					                            <a href="${pageContext.request.contextPath }/manager/toupdatestaff?staffid=${staff.staffid}" class="btn btn-primary btn-xs">修改</a>
+					                            <a href="${pageContext.request.contextPath }/Admin/toupdatestaff?staffid=${staff.staffid}" class="btn btn-primary btn-xs">修改</a>
 					                            <a onclick="del(${staff.staffid})"  class= "btn btn-danger btn-xs" aria-label="Left Align" role="button">删除</a>
 					                         </th>
 					          	</tr>
@@ -58,7 +58,7 @@
 		var message=confirm("是否确认要删除?");
 		if (message==true) {
 			// 确认时做的操作 var 
-			window.location.href="${pageContext.request.contextPath }/manager/delete?staffid="+id;
+			window.location.href="${pageContext.request.contextPath }/Admin/delete?staffid="+id;
 			alert("删除成功");
 	} else {
 		// 取消时做的操作

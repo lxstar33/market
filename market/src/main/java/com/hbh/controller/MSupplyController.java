@@ -22,7 +22,7 @@ import com.hbh.service.imp.SupplyMapperServiceImp;
  * @Des 
  */
 @Controller
-@RequestMapping("/manager/flatform/supply")
+@RequestMapping("/Admin/flatform/supply")
 public class MSupplyController {
 	
 	@Autowired

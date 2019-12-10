@@ -85,7 +85,7 @@
                         </div>
                       
 						<a onclick="javascript:history.back(-1);" class=" text-left btn btn-default  " role="button">返回上页</a>
-						<a href="${pageContext.request.contextPath }/manager/flatform/kcxx/toupdate?proid=${kcxx.proid}" class=" text-center btn btn-primary  col-md-offset-4 col-lg-offset-4col-xl-offset-4" role="button">修改</a>
+						<a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/toupdate?proid=${kcxx.proid}" class=" text-center btn btn-primary  col-md-offset-4 col-lg-offset-4col-xl-offset-4" role="button">修改</a>
 								                      
                     </form>
 	<div class="clearfix"></div>

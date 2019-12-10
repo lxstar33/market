@@ -33,8 +33,8 @@
 												    编辑 <span class="caret"></span>
 												  </button>
 												  <ul class="dropdown-menu">
-												    <li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPro?proid=${kcxx.proid}" >查看</a></li>
-												    <li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/toupdate?proid=${kcxx.proid}">进货</a></li>
+												    <li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPro?proid=${kcxx.proid}" >查看</a></li>
+												    <li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/toupdate?proid=${kcxx.proid}">进货</a></li>
 												  </ul>
 												</div>
 					                         </th>
@@ -52,9 +52,9 @@
 							<div class="col-md-6">
 								<nav aria-label="Page navigation">
 								<ul class="pagination">
-									<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPronum?pn=1">首页</a></li>
+									<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPronum?pn=1">首页</a></li>
 									<c:if test="${pageInfo.hasPreviousPage }">
-										<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPronum?pn=${pageInfo.pageNum-1}"
+										<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPronum?pn=${pageInfo.pageNum-1}"
 											aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
 										</a></li>
 									</c:if>
@@ -65,16 +65,16 @@
 											<li class="active"><a href="#">${page_Num }</a></li>
 										</c:if>
 										<c:if test="${page_Num != pageInfo.pageNum }">
-											<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPronum?pn=${page_Num }">${page_Num }</a></li>
+											<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPronum?pn=${page_Num }">${page_Num }</a></li>
 										</c:if>
 				
 									</c:forEach>
 									<c:if test="${pageInfo.hasNextPage }">
-										<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPronum?pn=${pageInfo.pageNum+1 }"
+										<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPronum?pn=${pageInfo.pageNum+1 }"
 											aria-label="Next"> <span aria-hidden="true">&raquo;</span>
 										</a></li>
 									</c:if>
-									<li><a href="${pageContext.request.contextPath }/manager/flatform/kcxx/kcxxWithPronum?pn=${pageInfo.pages}">末页</a></li>
+									<li><a href="${pageContext.request.contextPath }/Admin/flatform/kcxx/kcxxWithPronum?pn=${pageInfo.pages}">末页</a></li>
 								</ul>
 								</nav>
 							</div>

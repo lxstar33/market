@@ -32,7 +32,7 @@ import com.hbh.service.imp.SaleServiceImp;
  * @Des 顾客退货
  */
 @Controller
-@RequestMapping("/manager/flatform/ckretire")
+@RequestMapping("/Admin/flatform/ckretire")
 public class MCkretireController {
 	@Autowired
 	CkretireServiceImp ckretireServiceImp;
